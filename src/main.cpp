@@ -44,6 +44,7 @@ void loop() {
 
     // Senden
     sendData(espNowAddress, myData);
+    myData = struct_message{}; // Alle Werte zurücksetzen
     delay(3000);
   } else {
     // Empfänger muss nichts tun, da die Daten im Callback verarbeitet werden
